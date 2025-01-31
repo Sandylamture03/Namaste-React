@@ -1,4 +1,4 @@
-{
+
   "name": "yes",
   "version": "1.0.0",
   "description": "ignite react ",
@@ -27,5 +27,7 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
+  },
+  "browserslist": {
+    "last 2 versions"
   }
-}
