@@ -39,9 +39,18 @@ const HeadingComponent = () => {
 // this is another way to write react components without return keyword and braces and JSX
 // component composition means adding one component to the another component buy doing component name inside closing tag
 // < HeadingComponent /> inside HeadingComponent2  as follows
+// also wen can write element inside the component by doing {heading} like veriable name inside braces inside JSX
 const HeadingComponent2 = () => (
   <div id="container">
+    {heading}
+    {/* adding react element inside component */}
     <HeadingComponent />
+    {/* // adding element inside element */}
+    {HeadingComponent()}
+    {/* // another way to add element inside element */}
+    <HeadingComponent></HeadingComponent>
+    {/* // another way to add element inside element */}
+
     <h1 className="heading">Namaste React from Functional Component 2 </h1>
   </div>
 );
